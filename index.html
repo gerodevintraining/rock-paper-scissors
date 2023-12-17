@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <header class="game-title" style="display: none;">
+        <p>ROCK PAPER SCISSORS:</p>
+        <p>BATTLE FOR HUMANITY</p>
+        <button class="start-button">Start</button>
+    </header>
+    
+    <div class="game-backgrounds-container">
+    </div>
+
+    <div class="boss-life-container">
+        <p>Life</p>
+        <div class="boss-life-border">
+            <div class="boss-life"></div>
+        </div>
+    </div>
+
+    <div class="boss-attack-container">
+        <div class="boss-attack hide">Rock</div>
+        <div class="boss-attack hide">Paper</div>
+        <div class="boss-attack hide">Scissors</div>
+    </div>
+    
+    <div class="interactive-area">
+        <div class="interactive-area-container">
+            <div class="dialogue-box hide">
+                <p></p>
+            </div>
+            <div class="game-message-container">
+                <p class="game-message">Make your move!</p>
+                <p class="game-explanation">Decide the fate of humanity</p>
+            </div>
+            <div class="move-buttons-container">
+                <button type="button" class="move-button" value="rock">Rock</button>
+                <button type="button" class="move-button" value="paper">Paper</button>
+                <button type="button" class="move-button" value="scissors">Scissors</button>
+            </div>
+            <button type="button" class="restart hide">Restart?</button>
+            <div class="player-life-container">
+                <p>Life</p>
+                <div class="player-life-border">
+                    <div class="player-life"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="main.js"></script>
 </body>
 </html>
